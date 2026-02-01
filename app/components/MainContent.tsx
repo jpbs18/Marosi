@@ -1,13 +1,13 @@
 export default function MainContent() {
   return (
-    <main className="flex-1">
+    <main className="flex-1 bg-gray-50 text-gray-900">
       <div className="max-w-6xl mx-auto px-4 py-12 space-y-14">
         {/* Intro */}
         <section className="space-y-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-semibold">
+          <h2 className="text-2xl md:text-3xl font-semibold text-green-700">
             🔧 Construção, Renovação e Fix & Flip Imobiliário
           </h2>
-          <p className="text-neutral-700 max-w-3xl mx-auto">
+          <p className="max-w-3xl mx-auto">
             Na Marosi, transformamos projetos em realidade. De remodelações a
             soluções inovadoras para valorizar o seu imóvel, oferecemos serviços
             modernos, sustentáveis e totalmente personalizados.
@@ -25,9 +25,9 @@ export default function MainContent() {
           <p>✅ Atendimento dedicado e profissionalismo em cada detalhe</p>
         </section>
 
-        {/* Services */}
+        {/* Services Section */}
         <section>
-          <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">
+          <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center text-green-700">
             Serviços
           </h3>
 
@@ -51,7 +51,7 @@ export default function MainContent() {
             ].map((service) => (
               <li
                 key={service}
-                className="border rounded-lg p-4 hover:shadow transition"
+                className="border rounded-lg p-4 hover:shadow transition bg-white"
               >
                 {service}
               </li>
