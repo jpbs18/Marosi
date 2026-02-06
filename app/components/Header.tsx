@@ -7,6 +7,7 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <div className="relative w-30 h-30">
             <Image
+              priority
               src="/logo.webp"
               alt="Marosi logo"
               fill

@@ -78,7 +78,7 @@ export default function MainContent() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="bg-stone-100">
         <div className="max-w-6xl mx-auto px-6 py-24 space-y-12">
           <h2 className="text-3xl font-bold text-center">Projetos Recentes</h2>
 
