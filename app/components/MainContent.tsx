@@ -16,40 +16,40 @@ const galleryImages = [
 
 export default function MainContent() {
   return (
-    <main className="flex-1 bg-gray-50 text-gray-900">
-      <div className="max-w-6xl mx-auto px-4 py-16 space-y-16">
-        {/* Intro Section */}
-        <section className="space-y-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-green-900">
-            🔧 Construção, Renovação e Fix & Flip Imobiliário
-          </h2>
-          <p className="max-w-3xl mx-auto text-gray-700 leading-relaxed text-lg md:text-xl">
-            Na Marosi, transformamos projetos em realidade. De remodelações a
-            soluções inovadoras para valorizar o seu imóvel, oferecemos serviços
-            modernos, sustentáveis e totalmente personalizados.
-          </p>
-        </section>
+    <main className="flex-1 text-stone-900">
+      <section>
+        <div className="max-w-6xl mx-auto px-6 py-24 text-center space-y-6">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+            Construção e Remodelação com Rigor e Qualidade
+          </h1>
 
-        {/* Highlights */}
-        <section className="max-w-3xl mx-auto space-y-3 text-center">
-          <p className="text-green-800 font-semibold text-lg">
-            ✅ Remodelações e renovações de espaços residenciais e comerciais
+          <p className="text-lg md:text-xl text-stone-600 leading-relaxed max-w-3xl mx-auto">
+            Transformamos imóveis com soluções modernas e funcionais.
+            Especialistas em remodelações completas, reabilitação de interiores
+            e projetos Fix & Flip para valorização do seu património.
           </p>
-          <p className="text-green-800 font-semibold text-lg">
-            ✅ Fix & Flip imobiliário para maximizar o valor do seu património
-          </p>
-          <p className="text-green-800 font-semibold text-lg">
-            ✅ Atendimento dedicado e profissionalismo em cada detalhe
-          </p>
-        </section>
+        </div>
+      </section>
 
-        {/* Services Section */}
-        <section>
-          <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center text-green-900">
-            Serviços
-          </h3>
+      <section className="bg-stone-100">
+        <div className="max-w-4xl mx-auto px-6 py-20 text-center space-y-4">
+          <p className="text-lg font-medium text-stone-700">
+            Remodelações e renovações residenciais e comerciais
+          </p>
+          <p className="text-lg font-medium text-stone-700">
+            Projetos Fix & Flip para maximizar o valor do seu imóvel
+          </p>
+          <p className="text-lg font-medium text-stone-700">
+            Atendimento dedicado e profissionalismo em cada detalhe
+          </p>
+        </div>
+      </section>
 
-          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <section>
+        <div className="max-w-6xl mx-auto px-6 py-24 space-y-12">
+          <h2 className="text-3xl font-bold text-center">Serviços</h2>
+
+          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {[
               "Remodelações Completas",
               "Cozinhas e Casas de Banho",
@@ -65,29 +65,28 @@ export default function MainContent() {
               "Pinturas Interior e Exterior",
               "Impermeabilizações",
               "Reabilitação de Interiores",
-              "Soluções personalizadas",
+              "Soluções Personalizadas",
             ].map((service) => (
               <li
                 key={service}
-                className="bg-white border border-green-200 rounded-xl p-6 text-center font-medium text-gray-800 shadow-sm hover:shadow-lg transition transform hover:-translate-y-1"
+                className="bg-white border border-stone-200 rounded-2xl p-8 text-center font-medium text-stone-800 shadow-sm hover:shadow-lg transition duration-300"
               >
                 {service}
               </li>
             ))}
           </ul>
-        </section>
+        </div>
+      </section>
 
-        {/* Gallery Section */}
-        <section className="max-w-6xl mx-auto px-4 py-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-green-900 text-center mb-12">
-            Projetos Recentes
-          </h2>
+      <section className="bg-white">
+        <div className="max-w-6xl mx-auto px-6 py-24 space-y-12">
+          <h2 className="text-3xl font-bold text-center">Projetos Recentes</h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {galleryImages.map((url, idx) => (
               <div
                 key={idx}
-                className="relative w-full h-64 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-1"
+                className="relative w-full h-64 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition duration-300"
               >
                 <Image
                   src={url}
@@ -99,8 +98,8 @@ export default function MainContent() {
               </div>
             ))}
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
   );
 }

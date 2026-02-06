@@ -2,16 +2,20 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="relative w-full h-[15vh] bg-gray-300 flex items-center px-4">
-      <div className="flex w-full flex-col sm:flex-row items-center sm:items-start justify-start max-w-6xl mx-auto gap-2 sm:gap-0">
-        {/* Logo */}
-        <div className="w-20 h-20 sm:w-28 sm:h-28 relative flex-shrink-0">
-          <Image
-            src="https://res.cloudinary.com/dmhbuwega/image/upload/w_200,h_200,c_fill,f_auto/grwotcskzda02qxhnzeu.webp"
-            alt="Marosi logo"
-            fill
-            className="object-contain"
-          />
+    <header className="w-full bg-stone-100 border-b border-stone-200">
+      <div className="max-w-6xl mx-auto flex items-center justify-center py-2 px-4">
+        <div className="flex items-center gap-4">
+          <div className="relative w-30 h-30">
+            <Image
+              src="/logo.webp"
+              alt="Marosi logo"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <span className="text-2xl md:text-3xl font-semibold tracking-tight text-stone-900">
+            MAROSI
+          </span>
         </div>
       </div>
     </header>
